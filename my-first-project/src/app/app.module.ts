@@ -21,6 +21,8 @@ import { DislikesCountComponent } from './search/dislikes-count/dislikes-count.c
 import { CommentsCountComponent } from './search/comments-count/comments-count.component';
 import { VideoTitleComponent } from './search/video-title/video-title.component';
 import { MoreButtonComponent } from './search/more-button/more-button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { MoreButtonComponent } from './search/more-button/more-button.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
