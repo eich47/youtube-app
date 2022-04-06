@@ -22,7 +22,9 @@ import { CommentsCountComponent } from './search/comments-count/comments-count.c
 import { VideoTitleComponent } from './search/video-title/video-title.component';
 import { MoreButtonComponent } from './search/more-button/more-button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule
 
   ],
   providers: [],
