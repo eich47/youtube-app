@@ -1,5 +1,5 @@
 <div class="search-block">
-    <app-header [searchQuery]="searchQuety"></app-header>
+    <app-header [searchQuery]="searchQuety" (searchUserRequest)="handlerSearchUserRequest($event)"></app-header>
 
     <app-search-result [searchQuery]="searchQuety"></app-search-result>
 

@@ -1,7 +1,7 @@
 <header>
     <div class="line-1">
         <app-logo></app-logo>
-        <app-search-input></app-search-input>
+        <app-search-input (searchRequest)="handlerSearchRequest($event)"></app-search-input>
         <app-login-block class="login-bnt"></app-login-block>
     </div>
     <div class="line-2" *ngIf="searchQuery">

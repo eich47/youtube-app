@@ -1,11 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
 
-  @Input() searchQuery: string = ""
+  @Input() searchQuery: string = '';
+
+  @Output() searchUserRequest = new EventEmitter<string>();
+
+  handlerSearchRequest(userStr: string) {
+    // console.log(userStr);
+    this.searchQuery = userStr;
+    this.searchUserRequest.emit(userStr);
+  }
 }

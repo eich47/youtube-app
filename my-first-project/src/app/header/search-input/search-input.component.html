@@ -1,7 +1,8 @@
-<form>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <mat-form-field class="example-full-width" appearance="fill">
         <!-- <mat-label>First name</mat-label> -->
-        <input matInput>
+        <!-- <input matInput #searchBox (input)="handlerSearchStr(searchBox.value)" name="search"> -->
+        <input matInput name="search" ngModel>
     </mat-form-field>
-    <button mat-button color="primary">search</button>
+    <button mat-button color="primary" type="submit">search</button>
 </form>
