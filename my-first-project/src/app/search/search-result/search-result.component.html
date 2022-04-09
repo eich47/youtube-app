@@ -1,1 +1,3 @@
-<div class="search-block" *ngIf="searchQuery">search-result works!</div>
+<div class="search-block" *ngIf="searchQuery">
+    <app-search-item *ngFor="let video of data.items" [video]="video"></app-search-item>
+</div>

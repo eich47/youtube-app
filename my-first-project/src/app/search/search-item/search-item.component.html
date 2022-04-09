@@ -1,1 +1,11 @@
-<p>search-item works!</p>
+<div>
+    <img [src]="video.snippet.thumbnails.default.url" alt="">
+    <div class="actions">
+        <button>{{video.statistics.viewCount}}</button>
+        <button>{{video.statistics.likeCount}}</button>
+        <button>{{video.statistics.dislikeCount}}</button>
+        <button>{{video.statistics.commentCount}}</button>
+    </div>
+    <h1>{{video.snippet.title}}</h1>
+    <button>more..</button>
+</div>
