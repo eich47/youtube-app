@@ -147,6 +147,124 @@ export const youtubeResponse = {
     },
     {
       'kind': 'youtube#video',
+      'etag': '"Fznwjl6JEQdo1MGvHOGaz_YanRU/uto79F2R8W05GFpiUAcLdFGs7PQ"',
+      'id': 'Fdf5aTYRW0E',
+      'snippet': {
+        'publishedAt': '2022-04-10T17:46:58.000Z',
+        'channelId': 'UC29ju8bIPH5as8OGnQzwJyA',
+        'title': 'Dublicate Angular Crash Course',
+        'description': 'In this video we will talk about what Angular is and then jump in and build a small app With Angular 7, looking at most of the fundamental concepts like components, services, modules, etc\n\nSponsor:\nhttp://www.netlify.com\n\nCode:\nhttps://github.com/bradtraversy/angular-crash-todolist\n\n💖 Become a Patron: Show support & get perks!\nhttp://www.patreon.com/traversymedia\n\nWebsite & Udemy Courses\nhttp://www.traversymedia.com\n\nFollow Traversy Media:\nhttps://www.facebook.com/traversymedia\nhttps://www.twitter.com/traversymedia\nhttps://www.instagram.com/traversymedia',
+        'thumbnails': {
+          'default': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/default.jpg',
+            'width': 120,
+            'height': 90,
+          },
+          'medium': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/mqdefault.jpg',
+            'width': 320,
+            'height': 180,
+          },
+          'high': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/hqdefault.jpg',
+            'width': 480,
+            'height': 360,
+          },
+          'standard': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/sddefault.jpg',
+            'width': 640,
+            'height': 480,
+          },
+          'maxres': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/maxresdefault.jpg',
+            'width': 1280,
+            'height': 720,
+          },
+        },
+        'channelTitle': 'Traversy Media',
+        'tags': [
+          'angular',
+          'angular 7',
+          'angular tutorial',
+          'angularjs',
+        ],
+        'categoryId': '28',
+        'liveBroadcastContent': 'none',
+        'localized': {
+          'title': 'Angular Crash Course',
+          'description': 'In this video we will talk about what Angular is and then jump in and build a small app With Angular 7, looking at most of the fundamental concepts like components, services, modules, etc\n\nSponsor:\nhttp://www.netlify.com\n\nCode:\nhttps://github.com/bradtraversy/angular-crash-todolist\n\n💖 Become a Patron: Show support & get perks!\nhttp://www.patreon.com/traversymedia\n\nWebsite & Udemy Courses\nhttp://www.traversymedia.com\n\nFollow Traversy Media:\nhttps://www.facebook.com/traversymedia\nhttps://www.twitter.com/traversymedia\nhttps://www.instagram.com/traversymedia',
+        },
+        'defaultAudioLanguage': 'en',
+      },
+      'statistics': {
+        'viewCount': '456979',
+        'likeCount': '8213',
+        'dislikeCount': '131',
+        'favoriteCount': '0',
+        'commentCount': '555',
+      },
+    },
+    {
+      'kind': 'youtube#video',
+      'etag': '"Fznwjl6JEQdo1MGvHOGaz_YanRU/uto79F2R8W05GFpiUAcLdFGs7PQ"',
+      'id': 'Fdf5aTYRW0E',
+      'snippet': {
+        'publishedAt': '2022-04-01T17:46:58.000Z',
+        'channelId': 'UC29ju8bIPH5as8OGnQzwJyA',
+        'title': 'Dublicate 2 Angular Crash Course',
+        'description': 'In this video we will talk about what Angular is and then jump in and build a small app With Angular 7, looking at most of the fundamental concepts like components, services, modules, etc\n\nSponsor:\nhttp://www.netlify.com\n\nCode:\nhttps://github.com/bradtraversy/angular-crash-todolist\n\n💖 Become a Patron: Show support & get perks!\nhttp://www.patreon.com/traversymedia\n\nWebsite & Udemy Courses\nhttp://www.traversymedia.com\n\nFollow Traversy Media:\nhttps://www.facebook.com/traversymedia\nhttps://www.twitter.com/traversymedia\nhttps://www.instagram.com/traversymedia',
+        'thumbnails': {
+          'default': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/default.jpg',
+            'width': 120,
+            'height': 90,
+          },
+          'medium': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/mqdefault.jpg',
+            'width': 320,
+            'height': 180,
+          },
+          'high': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/hqdefault.jpg',
+            'width': 480,
+            'height': 360,
+          },
+          'standard': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/sddefault.jpg',
+            'width': 640,
+            'height': 480,
+          },
+          'maxres': {
+            'url': 'https://i.ytimg.com/vi/Fdf5aTYRW0E/maxresdefault.jpg',
+            'width': 1280,
+            'height': 720,
+          },
+        },
+        'channelTitle': 'Traversy Media',
+        'tags': [
+          'angular',
+          'angular 7',
+          'angular tutorial',
+          'angularjs',
+        ],
+        'categoryId': '28',
+        'liveBroadcastContent': 'none',
+        'localized': {
+          'title': 'Angular Crash Course',
+          'description': 'In this video we will talk about what Angular is and then jump in and build a small app With Angular 7, looking at most of the fundamental concepts like components, services, modules, etc\n\nSponsor:\nhttp://www.netlify.com\n\nCode:\nhttps://github.com/bradtraversy/angular-crash-todolist\n\n💖 Become a Patron: Show support & get perks!\nhttp://www.patreon.com/traversymedia\n\nWebsite & Udemy Courses\nhttp://www.traversymedia.com\n\nFollow Traversy Media:\nhttps://www.facebook.com/traversymedia\nhttps://www.twitter.com/traversymedia\nhttps://www.instagram.com/traversymedia',
+        },
+        'defaultAudioLanguage': 'en',
+      },
+      'statistics': {
+        'viewCount': '456979',
+        'likeCount': '8213',
+        'dislikeCount': '131',
+        'favoriteCount': '0',
+        'commentCount': '555',
+      },
+    },
+    {
+      'kind': 'youtube#video',
       'etag': '"Fznwjl6JEQdo1MGvHOGaz_YanRU/6e0k9ik7TThWpqueHGOhTRIN1-A"',
       'id': 'k5E2AVpwsko',
       'snippet': {

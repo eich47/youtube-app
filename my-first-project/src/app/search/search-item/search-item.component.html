@@ -1,4 +1,4 @@
-<div>
+<div [appBorderColor]="video.snippet.publishedAt" class="item">
     <img [src]="video.snippet.thumbnails.default.url" alt="">
     <div class="actions">
         <button>{{video.statistics.viewCount}}</button>
