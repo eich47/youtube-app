@@ -2,9 +2,10 @@
     <div class="line-1">
         <app-logo></app-logo>
         <app-search-input (searchRequest)="handlerSearchRequest($event)"></app-search-input>
+        <app-settings (handlerSettingClick)="onSettingsClick()"></app-settings>
         <app-login-block class="login-bnt"></app-login-block>
     </div>
-    <div class="line-2" *ngIf="searchQuery">
+    <div class="line-2" *ngIf="toggleSettins">
         <app-filter-block></app-filter-block>
     </div>
 </header>

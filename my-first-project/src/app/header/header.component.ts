@@ -11,9 +11,15 @@ export class HeaderComponent {
 
   @Output() searchUserRequest = new EventEmitter<string>();
 
+  public toggleSettins: boolean = false;
+
   handlerSearchRequest(userStr: string) {
     // console.log(userStr);
     this.searchQuery = userStr;
     this.searchUserRequest.emit(userStr);
+  }
+
+  onSettingsClick() {
+    this.toggleSettins = !this.toggleSettins;
   }
 }
