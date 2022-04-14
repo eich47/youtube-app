@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TypeSortEnum } from 'src/app/typeSort';
 import { youtubeResponse } from '../../youtubeResponseMock';
 import { SearchResponseModel } from '../search-response.model';
 
@@ -9,6 +10,8 @@ import { SearchResponseModel } from '../search-response.model';
 })
 export class SearchResultComponent {
   @Input() searchQuery: string = '';
+
+  @Input() typeSort:string = TypeSortEnum.desc;
 
   public data: SearchResponseModel = youtubeResponse;
 

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { TypeSortEnum } from '../typeSort';
 
 @Component({
   selector: 'app-filter-block',
   templateUrl: './filter-block.component.html',
-  styleUrls: ['./filter-block.component.scss']
+  styleUrls: ['./filter-block.component.scss'],
 })
-export class FilterBlockComponent implements OnInit {
+export class FilterBlockComponent  {
 
-  constructor() { }
+  @Output() handlerSortByDate = new EventEmitter<TypeSortEnum>();
 
-  ngOnInit(): void {
+  onSortByDate(sortByDate: TypeSortEnum) {
+    this.handlerSortByDate.emit(sortByDate);
   }
 
 }

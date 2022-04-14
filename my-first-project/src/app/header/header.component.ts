@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { TypeSortEnum } from '../typeSort';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,8 @@ export class HeaderComponent {
 
   @Output() searchUserRequest = new EventEmitter<string>();
 
+  @Output() handlerTypeSortByDate = new EventEmitter<TypeSortEnum>();
+
   public toggleSettins: boolean = false;
 
   handlerSearchRequest(userStr: string) {
@@ -21,5 +24,10 @@ export class HeaderComponent {
 
   onSettingsClick() {
     this.toggleSettins = !this.toggleSettins;
+  }
+
+  onSortByDate(sortType: TypeSortEnum) {
+    console.log('header');
+    this.handlerTypeSortByDate.emit(sortType);
   }
 }
