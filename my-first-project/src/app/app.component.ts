@@ -15,6 +15,10 @@ export class AppComponent {
 
   public sortByView: TypeSortEnum = TypeSortEnum.default;
 
+  public filteredWord: string = '';
+
+
+
   handlerSearchUserRequest(searchStr: string) {
     this.searchQuety = searchStr;
   }
@@ -25,6 +29,10 @@ export class AppComponent {
 
   onSortByView(typeSort: TypeSortEnum) {
     this.sortByView = typeSort;
+  }
+
+  onFilterByWord(word: string) {
+    this.filteredWord = word;
   }
 
   

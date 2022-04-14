@@ -12,12 +12,18 @@ export class FilterBlockComponent  {
 
   @Output() handlerSortByView = new EventEmitter<TypeSortEnum>();
 
+  @Output() handlerFilterByWord = new EventEmitter<string>();
+
   onSortByDate(sortByDate: TypeSortEnum) {
     this.handlerSortByDate.emit(sortByDate);
   }
 
   onSortByView(sortType: TypeSortEnum) {
     this.handlerSortByView.emit(sortType);
+  }
+
+  onFilterByWord(word: string) {
+    this.handlerFilterByWord.emit(word);
   }
 
 }

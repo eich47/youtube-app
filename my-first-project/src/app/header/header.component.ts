@@ -16,6 +16,8 @@ export class HeaderComponent {
 
   @Output() handlerSortByView = new EventEmitter<TypeSortEnum>();
 
+  @Output() handlerFilterByWord = new EventEmitter<string>();
+
   public toggleSettins: boolean = false;
 
   handlerSearchRequest(userStr: string) {
@@ -35,5 +37,9 @@ export class HeaderComponent {
 
   onSortByView(sortType: TypeSortEnum) {
     this.handlerSortByView.emit(sortType);
+  }
+
+  onFilterByWord(word: string) {
+    this.handlerFilterByWord.emit(word);
   }
 }

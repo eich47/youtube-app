@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter-by-word',
   templateUrl: './filter-by-word.component.html',
-  styleUrls: ['./filter-by-word.component.scss']
+  styleUrls: ['./filter-by-word.component.scss'],
 })
-export class FilterByWordComponent implements OnInit {
+export class FilterByWordComponent  {
+  @Output() handlerFilterByWord = new EventEmitter<string>();
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onInput(word: string) {
+    this.handlerFilterByWord.emit(word);
   }
 
 }

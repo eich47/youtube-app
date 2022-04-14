@@ -1,4 +1,4 @@
 <div class="search-block" *ngIf="searchQuery">
-    <app-search-item *ngFor="let video of data.items | sortByDate:typeSort | sortByView:sortByViewTipe" 
+    <app-search-item *ngFor="let video of data.items | sortByDate:typeSort | sortByView:sortByViewTipe | sortByWord: word" 
         [video]="video"></app-search-item>
 </div>

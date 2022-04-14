@@ -29,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 import { BorderColorDirective } from './directives/border-color.directive';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { SortByViewPipe } from './pipes/sort-by-view.pipe';
+import { SortByWordPipe } from './pipes/sort-by-word.pipe';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { SortByViewPipe } from './pipes/sort-by-view.pipe';
     BorderColorDirective,
     SortByDatePipe,
     SortByViewPipe,
+    SortByWordPipe,
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,9 @@
     <div class="line-2" *ngIf="toggleSettins">
         <app-filter-block 
             (handlerSortByDate)="onSortByDate($event)" 
-            (handlerSortByView)="onSortByView($event)">
+            (handlerSortByView)="onSortByView($event)"
+            (handlerFilterByWord)="onFilterByWord($event)"
+            >
         </app-filter-block>
     </div>
 </header>

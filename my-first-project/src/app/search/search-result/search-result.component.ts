@@ -13,6 +13,8 @@ export class SearchResultComponent {
 
   @Input() typeSort:string = TypeSortEnum.desc;
 
+  @Input() word:string = '';
+
   @Input() sortByViewTipe:TypeSortEnum = TypeSortEnum.default;
 
   public data: SearchResponseModel = youtubeResponse;
