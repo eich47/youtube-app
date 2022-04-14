@@ -14,6 +14,8 @@ export class HeaderComponent {
 
   @Output() handlerTypeSortByDate = new EventEmitter<TypeSortEnum>();
 
+  @Output() handlerSortByView = new EventEmitter<TypeSortEnum>();
+
   public toggleSettins: boolean = false;
 
   handlerSearchRequest(userStr: string) {
@@ -29,5 +31,9 @@ export class HeaderComponent {
   onSortByDate(sortType: TypeSortEnum) {
     console.log('header');
     this.handlerTypeSortByDate.emit(sortType);
+  }
+
+  onSortByView(sortType: TypeSortEnum) {
+    this.handlerSortByView.emit(sortType);
   }
 }

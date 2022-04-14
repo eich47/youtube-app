@@ -28,6 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { BorderColorDirective } from './directives/border-color.directive';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
+import { SortByViewPipe } from './pipes/sort-by-view.pipe';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SortByDatePipe } from './pipes/sort-by-date.pipe';
     MoreButtonComponent,
     BorderColorDirective,
     SortByDatePipe,
+    SortByViewPipe,
   ],
   imports: [
     BrowserModule,

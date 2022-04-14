@@ -10,8 +10,14 @@ export class FilterBlockComponent  {
 
   @Output() handlerSortByDate = new EventEmitter<TypeSortEnum>();
 
+  @Output() handlerSortByView = new EventEmitter<TypeSortEnum>();
+
   onSortByDate(sortByDate: TypeSortEnum) {
     this.handlerSortByDate.emit(sortByDate);
+  }
+
+  onSortByView(sortType: TypeSortEnum) {
+    this.handlerSortByView.emit(sortType);
   }
 
 }

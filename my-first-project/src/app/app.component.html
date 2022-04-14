@@ -2,10 +2,12 @@
 
     <app-header [searchQuery]="searchQuety" 
         (searchUserRequest)="handlerSearchUserRequest($event)"
-        (handlerTypeSortByDate)="onSortByDate($event)">
+        (handlerTypeSortByDate)="onSortByDate($event)"
+        (handlerSortByView)="onSortByView($event)"
+        >
     </app-header>
 
-    <app-search-result [searchQuery]="searchQuety" [typeSort]="sortByDate" ></app-search-result>
+    <app-search-result [searchQuery]="searchQuety" [typeSort]="sortByDate" [sortByViewTipe]="sortByView" ></app-search-result>
 
     <router-outlet></router-outlet>
 </div>

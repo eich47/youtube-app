@@ -6,6 +6,9 @@
         <app-login-block class="login-bnt"></app-login-block>
     </div>
     <div class="line-2" *ngIf="toggleSettins">
-        <app-filter-block (handlerSortByDate)="onSortByDate($event)"></app-filter-block>
+        <app-filter-block 
+            (handlerSortByDate)="onSortByDate($event)" 
+            (handlerSortByView)="onSortByView($event)">
+        </app-filter-block>
     </div>
 </header>

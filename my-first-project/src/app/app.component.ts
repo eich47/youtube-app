@@ -13,12 +13,18 @@ export class AppComponent {
 
   public sortByDate: TypeSortEnum = TypeSortEnum.default;
 
+  public sortByView: TypeSortEnum = TypeSortEnum.default;
+
   handlerSearchUserRequest(searchStr: string) {
     this.searchQuety = searchStr;
   }
 
   onSortByDate(typeSort: TypeSortEnum) {
     this.sortByDate = typeSort;
+  }
+
+  onSortByView(typeSort: TypeSortEnum) {
+    this.sortByView = typeSort;
   }
 
   
