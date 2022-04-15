@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { TypeSortEnum } from '../../typeSort';
+import { TypeSortEnum } from '../../../pipes/typeSort';
 
 @Component({
   selector: 'app-filter-date',

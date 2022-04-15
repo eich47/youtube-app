@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TypeSortEnum } from '../typeSort';
+import { TypeSortEnum } from '../../../youtube/pipes/typeSort';
 
 @Component({
   selector: 'app-header',

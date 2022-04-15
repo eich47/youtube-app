@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { SearchItemModel } from '../search/search-item.model';
-import { TypeSortEnum } from '../typeSort';
+import { SearchItemModel } from '../components/search/search-item.model';
+import { TypeSortEnum } from './typeSort';
 
 @Pipe({
   name: 'sortByDate',

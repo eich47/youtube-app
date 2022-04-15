@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { TypeSortEnum } from '../../typeSort';
-import { youtubeResponse } from '../../youtubeResponseMock';
+import { TypeSortEnum } from '../../../pipes/typeSort';
+import { youtubeResponse } from '../../../services/youtubeResponseMock';
 import { SearchResponseModel } from '../search-response.model';
 
 @Component({
