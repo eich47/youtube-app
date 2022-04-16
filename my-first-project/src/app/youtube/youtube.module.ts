@@ -14,6 +14,7 @@ import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { SortByViewPipe } from './pipes/sort-by-view.pipe';
 import { SortByWordPipe } from './pipes/sort-by-word.pipe';
 import { SharedModule } from '../shared/shared.module';
+import { VideoService } from './services/video.service';
 
 
 
@@ -38,5 +39,6 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
   ],
   exports: [SearchResultComponent],
+  providers: [ VideoService ],
 })
 export class YoutubeModule { }
