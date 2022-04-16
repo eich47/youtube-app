@@ -3,6 +3,7 @@ import { VideoService } from '../../../services/video.service';
 import { TypeSortEnum } from '../../../pipes/typeSort';
 import { SearchResponseModel } from '../search-response.model';
 import { SearchItemModel } from '../search-item.model';
+import { FilterService } from '../../../services/filter.service';
 
 @Component({
   selector: 'app-search-result',
@@ -12,7 +13,7 @@ import { SearchItemModel } from '../search-item.model';
 export class SearchResultComponent implements OnInit {
   @Input() searchQuery: string = '';
 
-  @Input() typeSort:string = TypeSortEnum.desc;
+  public typeDateSort:string = TypeSortEnum.desc;
 
   @Input() word:string = '';
 
@@ -22,11 +23,13 @@ export class SearchResultComponent implements OnInit {
 
   public listVideo:SearchItemModel[] = [];
 
-  constructor(public videoServices: VideoService) {}
+  constructor(public videoServices: VideoService, public filterService: FilterService) {}
 
   ngOnInit(): void {
     this.data = this.videoServices.youtubeResponse;
     this.listVideo = this.data.items;
+    this.typeDateSort = this.filterService.sortByDate;
+    console.log('typeDateSort как получить данные если они обновились в сервисе', this.typeDateSort);
   }
 
 }

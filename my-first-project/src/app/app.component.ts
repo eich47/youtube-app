@@ -11,7 +11,7 @@ export class AppComponent {
 
   public searchQuety = '';
 
-  public sortByDate: TypeSortEnum = TypeSortEnum.default;
+  // public sortByDate: TypeSortEnum = TypeSortEnum.default;
 
   public sortByView: TypeSortEnum = TypeSortEnum.default;
 
@@ -23,9 +23,9 @@ export class AppComponent {
     this.searchQuety = searchStr;
   }
 
-  onSortByDate(typeSort: TypeSortEnum) {
-    this.sortByDate = typeSort;
-  }
+  // onSortByDate(typeSort: TypeSortEnum) {
+  //   this.sortByDate = typeSort;
+  // }
 
   onSortByView(typeSort: TypeSortEnum) {
     this.sortByView = typeSort;

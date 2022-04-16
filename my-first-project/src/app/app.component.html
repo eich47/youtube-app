@@ -2,14 +2,12 @@
 
     <app-header [searchQuery]="searchQuety" 
         (searchUserRequest)="handlerSearchUserRequest($event)"
-        (handlerTypeSortByDate)="onSortByDate($event)"
         (handlerSortByView)="onSortByView($event)"
         (handlerFilterByWord)="onFilterByWord($event)"
         >
     </app-header>
 
     <app-search-result [searchQuery]="searchQuety" 
-        [typeSort]="sortByDate" 
         [sortByViewTipe]="sortByView" 
         [word]="filteredWord"
         ></app-search-result>
