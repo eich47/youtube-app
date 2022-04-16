@@ -15,6 +15,7 @@ import { SortByViewPipe } from './pipes/sort-by-view.pipe';
 import { SortByWordPipe } from './pipes/sort-by-word.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { VideoService } from './services/video.service';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 
@@ -33,6 +34,7 @@ import { VideoService } from './services/video.service';
     SortByDatePipe,
     SortByViewPipe,
     SortByWordPipe,
+    NotFoundComponent,
   ],
   imports: [
     CommonModule,
