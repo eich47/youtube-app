@@ -8,13 +8,12 @@ import { SearchResultComponent } from './components/search/search-result/search-
 import { VideoThimbnailComponent } from './components/search/video-thimbnail/video-thimbnail.component';
 import { VideoTitleComponent } from './components/search/video-title/video-title.component';
 import { ViewsCountComponent } from './components/search/views-count/views-count.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
 import { SearchItemComponent } from './components/search/search-item/search-item.component';
 import { BorderColorDirective } from './directives/border-color.directive';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { SortByViewPipe } from './pipes/sort-by-view.pipe';
 import { SortByWordPipe } from './pipes/sort-by-word.pipe';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -36,8 +35,7 @@ import { SortByWordPipe } from './pipes/sort-by-word.pipe';
   ],
   imports: [
     CommonModule,
-    MatIconModule,
-    MatButtonModule,
+    SharedModule,
   ],
   exports: [SearchResultComponent],
 })
