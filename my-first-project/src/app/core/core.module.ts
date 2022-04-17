@@ -11,6 +11,8 @@ import { FilterDateComponent } from '../youtube/components/filter-block/filter-d
 import { FilterCountViewComponent } from '../youtube/components/filter-block/filter-count-view/filter-count-view.component';
 import { FilterByWordComponent } from '../youtube/components/filter-block/filter-by-word/filter-by-word.component';
 import { SharedModule } from '../shared/shared.module';
+import { HomeComponent } from './pages/home/home.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -26,13 +28,15 @@ import { SharedModule } from '../shared/shared.module';
     FilterDateComponent,
     FilterCountViewComponent,
     FilterByWordComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
+    AppRoutingModule,
 
   ],
-  exports: [HeaderComponent],
+  exports: [],
 })
 export class CoreModule { }

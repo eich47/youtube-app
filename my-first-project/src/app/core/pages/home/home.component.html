@@ -1,0 +1,26 @@
+<div class="search-block">
+    <header>
+        <app-header [searchQuery]="searchQuety" 
+        (searchUserRequest)="handlerSearchUserRequest($event)"
+        (handlerSortByView)="onSortByView($event)"
+        (handlerFilterByWord)="onFilterByWord($event)"
+        >
+    </app-header>
+    </header>
+
+    <main>
+        home component
+        <router-outlet></router-outlet>
+    </main>
+
+    <!-- <app-search-result [searchQuery]="searchQuety" 
+        [sortByViewTipe]="sortByView" 
+        [word]="filteredWord"
+        ></app-search-result> -->
+
+        <footer>
+            footer
+        </footer>
+
+    
+</div>
